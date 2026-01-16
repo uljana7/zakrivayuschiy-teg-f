@@ -36,7 +36,7 @@
   align-items: center;
   padding: clamp(7.625rem, 6.487rem + 2.73vh, 8.125rem)
     clamp(1rem, -1.355rem + 10.047vw, 7.688rem);
-  font-family: var(--acent-font);
+  font-family: var(--acent-font), Arial, sans-serif;
   text-transform: uppercase;
   margin-top: 100px;
 }
@@ -116,7 +116,7 @@
   position: absolute;
   top: 25px;
   right: 25px;
-  font-family: var(--acent-font);
+  font-family: var(--acent-font), Arial, sans-serif;
   font-size: 14px;
   mix-blend-mode: hard-light;
   opacity: 0.5;
@@ -234,7 +234,7 @@
 }
 
 .button__text {
-  font-family: var(--acent-font);
+  font-family: var(--acent-font), Arial, sans-serif;
   font-size: 14px;
   position: relative;
   transition: color 0.5s ease-in-out;
@@ -270,7 +270,7 @@
 }
 
 .block-save {
-  font-family: var(--acent-font);
+  font-family: var(--acent-font), Arial, sans-serif;
   font-size: 14px;
   background-color: var(--color-white);
   border: solid var(--border-width) var(--color-black);
@@ -295,7 +295,7 @@
 }
 
 .dialog-save {
-  font-family: var(--acent-font);
+  font-family: var(--acent-font), Arial, sans-serif;
   background-color: var(--color-white);
   border: solid var(--border-width) var(--color-black);
   padding: 30px 40px;
