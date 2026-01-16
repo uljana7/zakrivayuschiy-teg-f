@@ -6,23 +6,21 @@
   --block__inline-size: clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem);
   --border-width: 2px;
   --gradient-variable: repeating-linear-gradient(
-    to right,
-    #d3d3d3,       
-    #d3d3d3 2px,
-    transparent 2px,
-    transparent 4px
-  ),  repeating-linear-gradient(
-    to bottom,
-    #d3d3d3,
-    #d3d3d3 2px,
-    transparent 2px,
-    transparent 4px
-  ), linear-gradient(
-    rgba(231, 231, 231, 1) 0.01%,
-    #e7e7e7 0.01%,
-    #1a1a1a 100%
-  );
+      to right,
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(rgba(231, 231, 231, 1) 0.01%, #e7e7e7 0.01%, #1a1a1a 100%);
   --color-black: #000;
   --color-white: #fff;
-  --animation-fill-color:#FF0000;
+  --animation-fill-color: #ff0000;
 }

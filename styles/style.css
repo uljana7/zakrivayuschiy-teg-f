@@ -10,11 +10,10 @@
 
 */
 
-
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--main-font), 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: var(--main-font), "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-variation-settings: "wght" var(--card__text-weight);
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,19 +28,20 @@
   gap: 100px;
 }
 
-.header{
+.header {
   background-color: var(--color-white);
   border: solid var(--border-width) var(--color-black);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: clamp(7.625rem, 6.487rem + 2.73vh, 8.125rem) clamp(1rem, -1.355rem + 10.047vw, 7.688rem);
+  padding: clamp(7.625rem, 6.487rem + 2.73vh, 8.125rem)
+    clamp(1rem, -1.355rem + 10.047vw, 7.688rem);
   font-family: var(--acent-font);
   text-transform: uppercase;
   margin-top: 100px;
 }
 
-.block{
+.block {
   inline-size: var(--block__inline-size);
 }
 
@@ -84,23 +84,23 @@
   filter: saturate(120%);
 }
 
-.img-leafes{
+.img-leafes {
   filter: hue-rotate(240deg);
 }
 
-.img-cat-sitting{
-  filter:grayscale(0.8) blur(0.5px);
+.img-cat-sitting {
+  filter: grayscale(0.8) blur(0.5px);
 }
 
 .img-park {
   filter: sepia(10%);
 }
 
-.img-angry{
+.img-angry {
   filter: hue-rotate(20deg);
 }
 
-.img-winter{
+.img-winter {
   filter: saturate(170%);
 }
 
@@ -108,7 +108,7 @@
   filter: saturate(170%);
 }
 
-.img-city{
+.img-city {
   filter: invert(0.1) blur(0.5px);
 }
 
@@ -120,11 +120,8 @@
   font-size: 14px;
   mix-blend-mode: hard-light;
   opacity: 0.5;
-  text-shadow:
-  -1px 0 var(--color-white), 
-  0 1px var(--color-white), 
-  1px 0 var(--color-white), 
-  0 -1px var(--color-white);
+  text-shadow: -1px 0 var(--color-white), 0 1px var(--color-white),
+    1px 0 var(--color-white), 0 -1px var(--color-white);
 }
 
 .card__text {
@@ -142,12 +139,10 @@
   align-items: center;
 }
 
-
 .card__icon-button {
   border: none;
   background: transparent;
   margin: 12px;
-
 }
 
 .card__icon-button:focus {
@@ -196,19 +191,6 @@
   transition: fill 0.3s linear 0.05s;
 }
 
-.card__icon-button:active .core {
-  fill: var(--animation-fill-color);
-  transition: fill 0.3s linear;
-}
-
-.card__icon-button:active .main-body {
-  fill: var(--animation-fill-color);
-  transition: fill 0.3s linear 0.05s;
-}
-
-.like-icon {
-}
-
 .like-icon.is-liked .core {
   fill: var(--animation-fill-color);
   transition: fill 0.3s linear;
@@ -251,23 +233,20 @@
   box-shadow: 2px 2px 0px var(--color-black);
 }
 
-
-
 .button__text {
   font-family: var(--acent-font);
   font-size: 14px;
   position: relative;
   transition: color 0.5s ease-in-out;
   z-index: 1;
-  
 }
 
-.hover{
+.hover {
   position: relative;
-  overflow: hidden;  
+  overflow: hidden;
 }
 
-.hover::after{
+.hover::after {
   content: "";
   position: absolute;
   top: 0;
@@ -311,12 +290,12 @@
   font-size: 14px;
 }
 
-.floppy_icon{
+.floppy_icon {
   inline-size: 28px;
   block-size: 28px;
 }
 
-.dialog-save{
+.dialog-save {
   font-family: var(--acent-font);
   background-color: var(--color-white);
   border: solid var(--border-width) var(--color-black);
@@ -330,7 +309,7 @@
   inline-size: 341px;
 }
 
-.dialog-save:not([open]){
+.dialog-save:not([open]) {
   opacity: 0;
   pointer-events: none;
 }
@@ -375,7 +354,7 @@
   text-transform: uppercase;
 }
 
-@supports((text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
+@supports ((text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
   .card__image-label {
     -webkit-text-stroke: 1px var(--color-white);
     text-stroke: 1px var(--color-white);
