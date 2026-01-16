@@ -22,4 +22,7 @@
     #e7e7e7 0.01%,
     #1a1a1a 100%
   );
+  --color-black: #000;
+  --color-white: #fff;
+  --animation-fill-color:#FF0000;
 }
