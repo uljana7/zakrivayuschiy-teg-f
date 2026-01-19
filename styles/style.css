@@ -358,11 +358,6 @@
   text-transform: uppercase;
 }
 
-.button:focus-visible {
-  outline: none;
-  box-shadow: 2px 2px 0px var(--main-design-color);
-}
-
 .dialog-save .button__text {
   font-weight: 400;
   font-size: 14px;
