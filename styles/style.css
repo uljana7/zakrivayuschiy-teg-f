@@ -1,4 +1,3 @@
-
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -117,8 +116,10 @@
   font-size: 14px;
   mix-blend-mode: hard-light;
   opacity: 0.5;
-  text-shadow: -1px 0 var(--contrast-design-color),
-    0 1px var(--contrast-design-color), 1px 0 var(--contrast-design-color),
+  text-shadow:
+    -1px 0 var(--contrast-design-color),
+    0 1px var(--contrast-design-color),
+    1px 0 var(--contrast-design-color),
     0 -1px var(--contrast-design-color);
   z-index: 1;
   text-transform: uppercase;
@@ -226,6 +227,9 @@
   cursor: pointer;
   font-family: var(--acent-font), Arial, sans-serif;
   font-size: 14px;
+  transition: box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
 .button:focus {
@@ -237,7 +241,6 @@
   padding-bottom: 10px;
   margin-right: 25px;
   inline-size: 130px;
-  transition: box-shadow 0.3s ease;
 }
 
 .button:focus-visible {
@@ -248,14 +251,12 @@
 .button__text {
   position: relative;
   transition: color 0.5s ease-in-out;
+  font-family: var(--acent-font), Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
 }
 
-.component-hover-animation {
-  position: relative;
-  overflow: hidden;
-}
-
-.component-hover-animation::after {
+.button::after {
   content: "";
   position: absolute;
   top: 0;
@@ -270,23 +271,19 @@
   mix-blend-mode: difference;
 }
 
-.component-hover-animation:hover::after {
+.button:hover::after {
   transform: scaleX(1);
 }
 
 .block-save {
-  font-family: var(--acent-font), Arial, sans-serif;
-  font-size: 14px;
   background-color: var(--contrast-design-color);
-  border: solid var(--border-width) var(--main-design-color);
   padding: 10px 0;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 4px;
   align-items: center;
   justify-content: center;
   inline-size: 310px;
-  cursor: pointer;
   margin-bottom: 100px;
 }
 
@@ -296,8 +293,8 @@
 }
 
 .floppy_icon {
-  inline-size: 28px;
-  block-size: 28px;
+  inline-size: 36px;
+  block-size: 36px;
 }
 
 .dialog-save {
@@ -343,13 +340,10 @@
   grid-column: 1/-1;
   padding-top: 10px;
   padding-bottom: 10px;
-  transition: box-shadow 0.3s ease;
   text-transform: uppercase;
 }
 
 .dialog-save .button__text {
-  font-weight: 400;
-  font-size: 14px;
   text-transform: uppercase;
 }
 
@@ -368,9 +362,14 @@
   .block-save {
     flex-direction: row;
     inline-size: 335px;
+    gap: 4px;
   }
   .dialog-save {
     inline-size: 355px;
     padding: 30px;
+  }
+  .floppy_icon {
+    inline-size: 26px;
+    block-size: 26px;
   }
 }
